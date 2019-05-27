@@ -10,8 +10,7 @@ fn main() {
 
     println!("Hello, world!");
 
-    iterator(5, 1440);
-    Blocking waiting for file lock on the registry index
+    iterator(10, 5000000);
 }
 
 
@@ -19,6 +18,8 @@ fn iterator (levels: u32, items: u32) {
 
     for level in 1..levels {
         println!("Hello {}", level);
+        info!("Started with vector {}...", level);
+
 
         let mut list = vec![];
 
